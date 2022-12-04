@@ -12,17 +12,17 @@ import { Estudiantes } from '../components/Estudiantes.jsx'
 export const AppRouter = () => {
     return (
         <div>
-            <HashRouter>
+            <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Inicio />}/>
-                    <Route path='/materias' element={<Materias />}/>
-                    <Route path='/profesores' element={<Profesores />}/>
-                    <Route path='/estudiantes' element={<Estudiantes />}/>
+                    <Route path='/materias' element={<Materias />}></Route>
+                    <Route path='/profesores' element={<Profesores />}></Route>
+                    <Route path='/estudiantes' element={<Estudiantes />}></Route>
 
 
 
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </div>
     )
 }
